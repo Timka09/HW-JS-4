@@ -27,14 +27,18 @@ if (hs2 > 10 && hs2 < 20) {
   alert("Число не входить в діапазон від 10 до 20");
 }
 // Task 5
-const name = prompt("Введіть свою назву");
-console.log(name);
+const lame = prompt("Введіть свою назву");
+console.log(lame);
 const email = prompt("Введіть свою пошту");
 console.log(email);
 const parol = prompt("Введіть свій пароль");
 console.log(parol);
-if (name >= 3 && email.includes("@" + ".") && parol >= 6) {
+if (lame.length >= 3) {
+  alert("Ви перенаправлені на іншу сторінку!");
+} else if (email.includes("@gmail.com" || "@hotmail.com" || "@ukr.net")) {
+  alert("Ви перенаправлені на іншу сторінку!");
+} else if (parol.length >= 6) {
   alert("Ви перенаправлені на іншу сторінку!");
 } else {
-  alert("Не правильно, спробуйте ще раз");
+  alert("Помилка!")
 }
